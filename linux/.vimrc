@@ -1,0 +1,21 @@
+set number
+set expandtab
+set ts=2
+set sw=2
+set scrolloff=10
+syntax enable
+syntax on
+set laststatus=2
+set autoindent
+set tabstop=2
+set ai!
+set cindent
+set smartindent
+set shiftwidth=2
+set showmatch
+set hlsearch
+set pastetoggle=<F9>
+set clipboard=unnamed
+colorscheme onedark
+set background=dark
+inoremap jj <Esc>
