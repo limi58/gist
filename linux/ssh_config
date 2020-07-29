@@ -1,0 +1,8 @@
+# at ~/.ssh/config
+
+Host alyun
+Hostname 1.1.1.1
+Port 22
+User root
+IdentityFile ~/.ssh/id_rsa
+
