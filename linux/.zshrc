@@ -15,3 +15,4 @@ alias grepp="grep -rn --exclude-dir=node_modules --exclude-dir=.git --exclude-di
 alias findp="find $1 -path './node_modules' -prune -o -print $2"
 alias rm = "rm -I --preserve-root"
 
+export HOMEBREW_NO_AUTO_UPDATE=true
