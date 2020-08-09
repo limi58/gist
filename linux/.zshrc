@@ -1,3 +1,8 @@
+plugins=(
+  git
+  zsh-autosuggestions
+)
+
 alias gs="git status"
 alias ns="npm start"
 alias gccc="git checkout -- ./"
