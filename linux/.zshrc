@@ -21,6 +21,9 @@ alias rm="rm -I --preserve-root"
 alias z="vim ~/.zshrc"
 alias zz="source ~/.zshrc"
 
+bindkey "^f" forward-word
+bindkey "^b" backward-word
+
 export HOMEBREW_NO_AUTO_UPDATE=true
 export GIT_EDITOR=vim
 export TERM=xterm-256color
