@@ -12,6 +12,7 @@ alias gacp="git add . && git commit && git push origin HEAD"
 alias gp="git push origin HEAD"
 alias gpf="git push origin HEAD -f"
 alias gfr="git fetch origin && git rebase origin/master"
+alias gpl="git pull origin HEAD"
 alias gl="git log --pretty=oneline"
 alias cdcol="cd ~/projects/college_h5"
 alias ll="ls -la"
@@ -27,3 +28,6 @@ bindkey "^b" backward-word
 export HOMEBREW_NO_AUTO_UPDATE=true
 export GIT_EDITOR=vim
 export TERM=xterm-256color
+
+# export ALL_PROXY=socks5://127.0.0.1:1086
+
