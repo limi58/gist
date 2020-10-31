@@ -1,0 +1,18 @@
+"vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["s"],
+      "after": ["leader", "leader", "s"]
+    },
+    {
+      "before": ["Z", "Z"],
+      "commands": [":wq"]
+    }
+  ],
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["j", "j"],
+      "after": ["<Esc>"]
+    }
+  ],
+  "vim.useSystemClipboard": true,
+  "vim.leader": "<space>"
