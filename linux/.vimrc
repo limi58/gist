@@ -19,6 +19,7 @@ set clipboard=unnamed
 colorscheme onedark
 set background=dark
 inoremap jj <Esc>
+map <space> \\s
 
 let mapleader=" "
 map <Leader> <Plug>(easymotion-prefix)
