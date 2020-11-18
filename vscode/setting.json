@@ -15,4 +15,8 @@
     }
   ],
   "vim.useSystemClipboard": true,
-  "vim.leader": "<space>"
+  "vim.leader": "<space>",
+  "[markdown]": {
+    "editor.wordWrap": "on",
+    "editor.quickSuggestions": true
+  }
