@@ -1,0 +1,225 @@
+// ========= js
+{
+	"Print to console": {
+		"prefix": "log",
+		"scope": "typescript,javascript,typescriptreact,javascriptreact",
+		"body": [
+			"console.log($1)"
+		],
+		"description": ""
+	},
+	"promise": {
+		"prefix": "pro",
+		"scope": "typescript,javascript,typescriptreact,javascriptreact",
+		"body": [
+			"return new Promise((resolve, reject) => {",
+			"  $1",
+			"})"
+		],
+		"description": ""
+	},
+	"stopPropagation()": {
+		"prefix": "stop",
+		"scope": "typescript,javascript,typescriptreact,javascriptreact",
+		"body": [
+			"stopPropagation()"
+		]
+	},
+	"preventDefault()": {
+		"prefix": "prevent",
+		"scope": "typescript,javascript,typescriptreact,javascriptreact",
+		"body": [
+			"preventDefault()"
+		]
+	},
+	"addEventListener": {
+		"prefix": "addEventListener",
+		"scope": "typescript,javascript,typescriptreact,javascriptreact",
+		"body": [
+			"addEventListener('$1', e => {$2})"
+		],
+		"description": ""
+	},
+	"forin": {
+		"prefix": "forin",
+		"scope": "typescript,javascript,typescriptreact,javascriptreact",
+		"body": [
+			"for (let i in $1) {",
+			"  $2",
+			"}"
+		],
+		"description": ""
+	},
+	"setTimeout": {
+		"prefix": "setTimeout",
+		"scope": "typescript,javascript,typescriptreact,javascriptreact",
+		"body": [
+			"setTimeout(() => {$1}, $2)"
+		],
+		"description": ""
+	},
+	"res": {
+		"prefix": "res",
+		"scope": "typescript,javascript,typescriptreact,javascriptreact",
+		"body": [
+			"res => {$1}"
+		],
+		"description": ""
+	},
+	"setInterval": {
+		"prefix": "setInterval",
+		"scope": "typescript,javascript,typescriptreact,javascriptreact",
+		"body": [
+			"setInterval(() => {$1}, $2)"
+		],
+		"description": ""
+	},
+	"module.exports": {
+		"prefix": "mo",
+		"scope": "typescript,javascript,typescriptreact,javascriptreact",
+		"body": [
+			"module.exports = $1"
+		],
+		"description": ""
+	},
+	"import": {
+		"prefix": "imp",
+		"scope": "typescript,javascript,typescriptreact,javascriptreact",
+		"body": [
+			"import ${2:name} from '$1'"
+		],
+		"description": ""
+	},
+	"install": {
+		"prefix": "install",
+		"scope": "typescript,javascript,typescriptreact,javascriptreact",
+		"body": [
+			"npm --registry=https://registry.npm.taobao.org i"
+		],
+		"description": ""
+	},
+	// 
+	// ============ react
+	// 
+	"sst": {
+		"prefix": "sst",
+		"scope": "typescript,javascript,typescriptreact,javascriptreact",
+		"body": [
+			"this.setState({ $1 })"
+		],
+		"description": ""
+	},
+	"cdm": {
+		"prefix": "cdm",
+		"scope": "typescript,javascript,typescriptreact,javascriptreact",
+		"body": [
+			"componentDidMount () {$1}"
+		],
+		"description": ""
+	},
+	"cwr": {
+		"prefix": "cwr",
+		"scope": "typescript,javascript,typescriptreact,javascriptreact",
+		"body": [
+			"componentWillReceiveProps (props) {$1}"
+		],
+		"description": ""
+	},
+	"cst": {
+		"prefix": "cst",
+		"scope": "typescript,javascript,typescriptreact,javascriptreact",
+		"body": [
+			"constructor (props) {",
+			"  super(props)$1",
+			"}"
+		],
+		"description": ""
+	},
+	"cwu": {
+		"prefix": "cwu",
+		"scope": "typescript,javascript,typescriptreact,javascriptreact",
+		"body": [
+			"componentWillUnmount () {$1}"
+		],
+		"description": ""
+	},
+	"scu": {
+		"prefix": "scu",
+		"scope": "typescript,javascript,typescriptreact,javascriptreact",
+		"body": [
+			"shouldComponentUpdate () {$1}"
+		],
+		"description": ""
+	},
+	"react": {
+		"prefix": "react",
+		"scope": "typescript,javascript,typescriptreact,javascriptreact",
+		"body": [
+			"import React, { useState, useEffect } from 'react'",
+			"import { Page } from '_component'",
+			"",
+			"",
+			"interface IProps{",
+			"}",
+			"",
+			"const $1: React.FC<IProps> = (props) => {",
+			"  return (",
+			"    <Page name='$2'>",
+			"      $3",
+			"    </Page>",
+			"  )",
+			"}",
+			"",
+			"",
+			"export default $1",
+			""
+		]
+	},
+	"ed": {
+		"prefix": "ed",
+		"scope": "typescript,javascript,typescriptreact,javascriptreact",
+		"body": [
+			"export default "
+		],
+		"description": ""
+	},
+	
+	"uses": {
+		"prefix": "uses",
+		"scope": "typescript,javascript,typescriptreact,javascriptreact",
+		"body": [
+			"const [$1, set${1/(.*)/${1:/capitalize}/}] = useState($2)"
+		],
+		"description": ""
+	},
+	"usee": {
+		"prefix": "usee",
+		"scope": "typescript,javascript,typescriptreact,javascriptreact",
+		"body": [
+			"useEffect(() => {$1}, [])"
+		],
+		"description": ""
+	},
+	// 
+	// ============== miniapp
+	// 
+	"setData": {
+		"prefix": "sd",
+		"scope": "typescript,javascript,typescriptreact,javascriptreact",
+		"body": [
+			"this.setData({ $1 })"
+		],
+		"description": ""
+	}
+}
+
+// =========== markdown
+{
+	"dir": {
+		"prefix": "dir",
+		"body": [
+			"- [$1](#${1/(.*)/${1:/downcase}/})",
+		],
+		"description": "Log output to console"
+	}
+}
