@@ -16,7 +16,6 @@ set showmatch
 set hlsearch
 set pastetoggle=<F9>
 set clipboard=unnamed
-colorscheme onedark
 set background=dark
 inoremap jj <Esc>
 map <space> \\s
